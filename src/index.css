@@ -57,8 +57,13 @@ p {
 }
 
 #header-1>img {
-    object-fit: contain;
+    object-fit: cover;
     height: 100vh;
+    max-width: 70vw;
+}
+
+#header-1>h2 {
+    padding: 0 50px;
 }
 
 #page1 {

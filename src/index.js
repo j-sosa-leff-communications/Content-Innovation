@@ -9,6 +9,7 @@ import header1 from "./Images/header-1.jpeg";
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    background-color: #efefef;
   }
 
   body {

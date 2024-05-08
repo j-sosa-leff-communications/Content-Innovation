@@ -4,6 +4,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 import HorizontalScroll from "./horizontal-scroll";
 import "./index.css";
+import header1 from "./Images/header-1.jpeg";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -39,28 +40,9 @@ const CardsContainer = styled.div`
   align-items: center;
 `;
 
-const SampleCard = styled.div`
-  position: relative;
-  height: 100%;
-  width: 100vw;
-  background-color: #111f30;
-  flex-shrink: 0;
-`;
-
-const SampleCards = React.memo(() =>
-  Array(2)
-    .fill(0)
-    .map((_e, i) => <SampleCard key={`sampleCard-${i}`} />)
-);
-
-function Page1() {
-  return <div class="page">
-            <h1>The content (r)evolution</h1>
-          </div>
-}
 function Page2() {
-  return <div class="header page">
-            <img src="./AdobeStock_589163962.jpeg" alt=""/>
+  return <div class="header page" id="header-1">
+            <img src={header1} alt=""/>
             <h2>What's up with thought leadership?</h2>
           </div>
 }
@@ -71,7 +53,7 @@ const App = () => (
     <Main>
       <BumperSection>
       <div class="gradient">
-        <div>
+        <div class="column-align">
             <h3>Thought leadership is everywhere.</h3>
             <h4>(SCROLL)</h4>
         </div>

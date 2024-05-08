@@ -17,7 +17,7 @@ h2, h3 {
     font-size: 2.5em;
 }
 h1 {
-    font-size: 8em;
+    font-size: 5em;
 }
 p {
     font-size: 2em;
@@ -36,6 +36,14 @@ p {
     background-image: linear-gradient(#f1f1f1, #000);
     position: relative;
 }
+.column-align {
+    position: relative;
+}
+
+.gradient>div>h4 {
+    position: absolute;
+    bottom: 50px;
+}
 
 .gradient>div {
     min-height: 100vh;
@@ -48,11 +56,17 @@ p {
   color: #fff;
 }
 
+#header-1>img {
+    object-fit: contain;
+    height: 100vh;
+}
+
 #page1 {
   min-height: 100vh;
   display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding: 0 5em;
   background: #000;
 }
@@ -79,6 +93,7 @@ p {
     align-items: center;
     position: initial;
 }
+
 .page {
   position: relative;
   height: 100%;
@@ -86,7 +101,7 @@ p {
   flex-shrink: 0;
 }
 
-.slide2>.header {
+#page-2 {
     background-color: #000;
     display: flex;
     flex-direction: row;
@@ -95,17 +110,17 @@ p {
     gap: 20px;
 }
 
-.slide2>.header>div>h2 {
+#page-2>div>h2 {
     color: #fff;
     margin-bottom: 50px;
 }
 
-.slide2>.header>div:nth-child(1) {
+#page-2>div:nth-child(1) {
     padding: 0 0 100px 50px;
 
 }
 
-.slide2>.header>div:nth-child(2) {
+#page-2>div:nth-child(2) {
     padding: 100px 50px 0 0;
 
 }

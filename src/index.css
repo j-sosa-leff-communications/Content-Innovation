@@ -20,7 +20,8 @@ h1 {
     font-size: 5em;
 }
 p {
-    font-size: 2em;
+    font-size: 1.75em;
+    line-height: 1.5;
 }
 
 .row {
@@ -80,7 +81,7 @@ p {
 }
 
 .body>p {
-    width: 70vw;
+    width: 50vw;
     padding: 40vh 50px;
     text-align: left;
 }

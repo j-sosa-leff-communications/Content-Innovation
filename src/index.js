@@ -9,12 +9,12 @@ import header1 from "./Images/header-1.jpeg";
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
-    background-color: #efefef;
   }
 
   body {
     margin: 0;
     font-family: sans-serif;
+    background-color: #efefef;
   }
 `;
 
@@ -92,17 +92,6 @@ const App = () => (
             <p>
                 Seen much of that lately?
             </p>
-            <p>
-                Thought leadership seems
-                everywhere and published by
-                everyone, making it difficult for even
-                truly distinctive insights to break
-                through. And while it has evolved into
-                an increasingly popular form of
-                content marketing, thought
-                leadership clings stubbornly to
-                several core beliefs.
-            </p>
         </div>
       </BumperSection>
       <HorizontalSection>
@@ -121,7 +110,7 @@ const App = () => (
                 several core beliefs.
               </p>
             </div>
-            <div class="header">
+            <div class="header" id="page-2">
                 <div>
                     <h2>It’s a different form of marketing that
                         doesn’t seek to overtly sell anything.

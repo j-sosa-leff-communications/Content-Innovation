@@ -1,17 +1,25 @@
 {
   "files": {
-    "main.css": "/Content-Innovation/static/css/main.f800a70d.css",
-    "main.js": "/Content-Innovation/static/js/main.b250807f.js",
+    "main.css": "/Content-Innovation/static/css/main.0e1cab96.css",
+    "main.js": "/Content-Innovation/static/js/main.ac3273c1.js",
     "static/media/header-3.jpeg": "/Content-Innovation/static/media/header-3.e4153c565d001a7f5f4d.jpeg",
     "static/media/header-4.png": "/Content-Innovation/static/media/header-4.c33928389d1338a4c7a9.png",
     "static/media/header-1.jpeg": "/Content-Innovation/static/media/header-1.fbfedef756299c078859.jpeg",
     "static/media/header-2.png": "/Content-Innovation/static/media/header-2.0e5a2ccc6573bf856ae1.png",
+    "static/media/Clarify complexity.png": "/Content-Innovation/static/media/Clarify complexity.29eb37da08a29eac05c4.png",
+    "static/media/Change perspective.png": "/Content-Innovation/static/media/Change perspective.42ae2820829a4c891999.png",
+    "static/media/Foster understanding.png": "/Content-Innovation/static/media/Foster understanding.22136988b6cf09b6d206.png",
+    "static/media/Build Momentum.png": "/Content-Innovation/static/media/Build Momentum.e2306b8c3e856559dd82.png",
+    "static/media/Establish leadership.png": "/Content-Innovation/static/media/Establish leadership.73aa4a444a1caedc9624.png",
+    "static/media/Convey meaning.png": "/Content-Innovation/static/media/Convey meaning.803dfc57be6dc3670707.png",
+    "static/media/Elevate brands.png": "/Content-Innovation/static/media/Elevate brands.3b0a4e2f138ac4b3eac3.png",
+    "static/media/Create excitement.png": "/Content-Innovation/static/media/Create excitement.214986d41f8eb837e5af.png",
     "index.html": "/Content-Innovation/index.html",
-    "main.f800a70d.css.map": "/Content-Innovation/static/css/main.f800a70d.css.map",
-    "main.b250807f.js.map": "/Content-Innovation/static/js/main.b250807f.js.map"
+    "main.0e1cab96.css.map": "/Content-Innovation/static/css/main.0e1cab96.css.map",
+    "main.ac3273c1.js.map": "/Content-Innovation/static/js/main.ac3273c1.js.map"
   },
   "entrypoints": [
-    "static/css/main.f800a70d.css",
-    "static/js/main.b250807f.js"
+    "static/css/main.0e1cab96.css",
+    "static/js/main.ac3273c1.js"
   ]
 }

@@ -1,25 +1,33 @@
 {
   "files": {
-    "main.css": "/Content-Innovation/static/css/main.ed1d9526.css",
-    "main.js": "/Content-Innovation/static/js/main.ac3273c1.js",
+    "main.css": "/Content-Innovation/static/css/main.6a8d2cc1.css",
+    "main.js": "/Content-Innovation/static/js/main.ac08d33b.js",
     "static/media/header-3.jpeg": "/Content-Innovation/static/media/header-3.e4153c565d001a7f5f4d.jpeg",
     "static/media/header-4.png": "/Content-Innovation/static/media/header-4.c33928389d1338a4c7a9.png",
     "static/media/header-1.jpeg": "/Content-Innovation/static/media/header-1.fbfedef756299c078859.jpeg",
     "static/media/header-2.png": "/Content-Innovation/static/media/header-2.0e5a2ccc6573bf856ae1.png",
     "static/media/Clarify complexity.png": "/Content-Innovation/static/media/Clarify complexity.29eb37da08a29eac05c4.png",
     "static/media/Change perspective.png": "/Content-Innovation/static/media/Change perspective.42ae2820829a4c891999.png",
+    "static/media/Move mountains.png": "/Content-Innovation/static/media/Move mountains.e6c88829f16f8ee8bc1e.png",
+    "static/media/Solidify trust.png": "/Content-Innovation/static/media/Solidify trust.d400eb4f2751273be8ee.png",
     "static/media/Foster understanding.png": "/Content-Innovation/static/media/Foster understanding.22136988b6cf09b6d206.png",
+    "static/media/Generate energy.png": "/Content-Innovation/static/media/Generate energy.eb88b30c919e2679aed7.png",
     "static/media/Build Momentum.png": "/Content-Innovation/static/media/Build Momentum.e2306b8c3e856559dd82.png",
     "static/media/Establish leadership.png": "/Content-Innovation/static/media/Establish leadership.73aa4a444a1caedc9624.png",
+    "static/media/Transmit belief.png": "/Content-Innovation/static/media/Transmit belief.a01a75df8d4c43d82a6c.png",
+    "static/media/Shift thinking.png": "/Content-Innovation/static/media/Shift thinking.49d81b2789b09f6c066f.png",
+    "static/media/Illuminate intelligence.png": "/Content-Innovation/static/media/Illuminate intelligence.11876d0cca05891f7452.png",
+    "static/media/Gain support.png": "/Content-Innovation/static/media/Gain support.dc8b8c17ca140053ce0d.png",
     "static/media/Convey meaning.png": "/Content-Innovation/static/media/Convey meaning.803dfc57be6dc3670707.png",
     "static/media/Elevate brands.png": "/Content-Innovation/static/media/Elevate brands.3b0a4e2f138ac4b3eac3.png",
+    "static/media/Touch hearts.png": "/Content-Innovation/static/media/Touch hearts.e845ab5d478df1ba4477.png",
     "static/media/Create excitement.png": "/Content-Innovation/static/media/Create excitement.214986d41f8eb837e5af.png",
     "index.html": "/Content-Innovation/index.html",
-    "main.ed1d9526.css.map": "/Content-Innovation/static/css/main.ed1d9526.css.map",
-    "main.ac3273c1.js.map": "/Content-Innovation/static/js/main.ac3273c1.js.map"
+    "main.6a8d2cc1.css.map": "/Content-Innovation/static/css/main.6a8d2cc1.css.map",
+    "main.ac08d33b.js.map": "/Content-Innovation/static/js/main.ac08d33b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ed1d9526.css",
-    "static/js/main.ac3273c1.js"
+    "static/css/main.6a8d2cc1.css",
+    "static/js/main.ac08d33b.js"
   ]
 }

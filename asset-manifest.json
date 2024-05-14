@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Content-Innovation/static/css/main.8595783a.css",
-    "main.js": "/Content-Innovation/static/js/main.29a76fbf.js",
+    "main.css": "/Content-Innovation/static/css/main.b312254f.css",
+    "main.js": "/Content-Innovation/static/js/main.69ed01f0.js",
     "static/media/header-3.jpeg": "/Content-Innovation/static/media/header-3.e4153c565d001a7f5f4d.jpeg",
     "static/media/header-4.png": "/Content-Innovation/static/media/header-4.c33928389d1338a4c7a9.png",
     "static/media/header-1.jpeg": "/Content-Innovation/static/media/header-1.fbfedef756299c078859.jpeg",
@@ -23,12 +23,16 @@
     "static/media/Elevate brands.png": "/Content-Innovation/static/media/Elevate brands.3b0a4e2f138ac4b3eac3.png",
     "static/media/Touch hearts.png": "/Content-Innovation/static/media/Touch hearts.e845ab5d478df1ba4477.png",
     "static/media/Create excitement.png": "/Content-Innovation/static/media/Create excitement.214986d41f8eb837e5af.png",
+    "static/media/short-form-text.png": "/Content-Innovation/static/media/short-form-text.cbf1ff291c7a23920e3f.png",
+    "static/media/long-form-text.png": "/Content-Innovation/static/media/long-form-text.5fa2b2cc8851602f06eb.png",
+    "static/media/multimedia.png": "/Content-Innovation/static/media/multimedia.74bdd4b9b6e37f2282d3.png",
+    "static/media/visual.png": "/Content-Innovation/static/media/visual.0b30189690eda8b3addb.png",
     "index.html": "/Content-Innovation/index.html",
-    "main.8595783a.css.map": "/Content-Innovation/static/css/main.8595783a.css.map",
-    "main.29a76fbf.js.map": "/Content-Innovation/static/js/main.29a76fbf.js.map"
+    "main.b312254f.css.map": "/Content-Innovation/static/css/main.b312254f.css.map",
+    "main.69ed01f0.js.map": "/Content-Innovation/static/js/main.69ed01f0.js.map"
   },
   "entrypoints": [
-    "static/css/main.8595783a.css",
-    "static/js/main.29a76fbf.js"
+    "static/css/main.b312254f.css",
+    "static/js/main.69ed01f0.js"
   ]
 }

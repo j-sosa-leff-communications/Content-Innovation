@@ -1,0 +1,83 @@
+:root * {
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+  }
+
+  
+#gradient-1 {
+    animation: fade-out .05s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  
+#gradient-2 {
+    animation: fade-out .086s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  
+#gradient-3 {
+    animation: fade-out .12s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  
+#gradient-4 {
+    animation: fade-out .155s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+@keyframes pulse {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

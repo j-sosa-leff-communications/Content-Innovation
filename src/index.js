@@ -1,9 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import ReactDOM from "react-dom/client";
 import styled, { createGlobalStyle } from "styled-components";
 
 import HorizontalScroll from "./horizontal-scroll";
-import Accordion from "./Accordion/accordion";
+import Accordion, { Accordion2 } from "./Accordion/accordion";
 import "./index.css";
 import "./animations.css";
 
@@ -37,6 +37,7 @@ import chart2 from "./Images/charts/short-form-text.png";
 import chart3 from "./Images/charts/multimedia.png";
 import chart4 from "./Images/charts/long-form-text.png";
 
+import logo from "./Images/Leff-logo-white.png"
 
 window.addEventListener('scroll', () => {
   document.body.style.setProperty('--scroll',window.pageYOffset / (document.body.offsetHeight - window.innerHeight));
@@ -47,6 +48,7 @@ window.addEventListener('scroll', () => {
 const GlobalStyle = createGlobalStyle`
   * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
   }
 
   body {
@@ -82,7 +84,7 @@ const CardsContainer = styled.div`
 function Page2() {
   return <div className="header page" id="header-1">
             <img loading="eager" src={ header1 } alt=""/>
-            <h2>What's up with thought leadership?</h2>
+            <h2>What’s up with thought leadership?</h2>
           </div>
 }
 
@@ -119,10 +121,10 @@ const App = () => (
             <h4>(SCROLL)</h4>
         </div>
         <div id="gradient-2">
-            <h3>It's too long, too academic, and asks too much of its audience.</h3>
+            <h3>It’s too long, too academic, and asks too much of its audience.</h3>
         </div>
         <div id="gradient-3">
-            <h3>It's everything and nothing; a dinosaur about to be wiped out by the AI meteorite.</h3>
+            <h3>It’s everything and nothing; a dinosaur about to be wiped out by the AI meteorite.</h3>
         </div>
         <div id="gradient-4">
             <h3>Right?</h3>
@@ -133,7 +135,7 @@ const App = () => (
         <HorizontalScroll>
           <CardsContainer>
             <div className="page column-align" id="page1">
-              <h1>The content (r)evolution</h1>
+              <h1>The Content (R)evolution</h1>
             <img className="titleImage" src={ titleImage } alt="hands holding an open book" />
             </div>
             <Page2 />
@@ -142,15 +144,15 @@ const App = () => (
       </HorizontalSection>
       <BumperSection>
         <div className="body">
-            <p>
+            <p id="page1p1">
                 It’s been thirty years since that term
                 was coined by Joel Kurtzman, the
-                founding editor of strategy+business,
+                founding editor of <i>strategy+business</i>,
                 who declared thought leaders had
                 “distinctively original ideas, unique
                 points of view and new insights.”
             </p>
-            <p>
+            <p id="page1p2">
                 Seen much of that lately?
             </p>
         </div>
@@ -159,7 +161,7 @@ const App = () => (
         <HorizontalScroll>
           <CardsContainer>
             <div className="body page" id="body-end">
-              <p>
+              <p id="page1p3">
                 Thought leadership seems
                 everywhere and published by
                 everyone, making it difficult for even
@@ -180,7 +182,7 @@ const App = () => (
                         It requires a lot of words because it deals with complex issues.
                     </h2>
                 </div>
-                <div>
+                <div className="right-align">
                     <h2>
                         Its sophisticated audience of top executives is willing to read all those words.
                     </h2>
@@ -194,7 +196,7 @@ const App = () => (
       </HorizontalSection>
       <BumperSection>
       <div className="body">
-            <p>We sought to find out if any or
+            <p id="page2p1">We sought to find out if any or
                 all of these were true. We were
                 wondering if anyone actually spends
                 20 minutes reading a 5,000-word
@@ -205,7 +207,7 @@ const App = () => (
                 fundamentally different form
                 of content.
             </p>
-            <p>
+            <p id="page2p2">
                 Our starting point? Since everyone
                 is what they publish—thought
                 leadership presents the public face
@@ -220,33 +222,41 @@ const App = () => (
         </div>
         <div className="charts">
           <div className="chartContainer">
+          
             
           <img id="chart1" className="chart active" src={ chart1 } alt="" />
           <img id="chart2" className="chart" src={ chart2 } alt="" />
           <img id="chart3" className="chart" src={ chart3 } alt="" />
           <img id="chart4" className="chart" src={ chart4 } alt="" />
+          <div className="disclaimer">
+            <span>Note: We analyzed a total of 953 pieces of thought leadership across 10 companies—around 100 per company. The balance of 4.3% of content types comprised a variety of sparsely used formats.
+We define short-form text as articles of fewer than 1,000 words and long-form as those of 1,001 or more words.</span>
+          </div>
           </div>
           <div className="chartSelector">
             <h3 id="chart1text" className="active" onClick={ open1 }>Visual (1.2%)</h3>
             <h3 id="chart2text" onClick={ open2 }>Short-form text (17.4%)</h3>
             <h3 id="chart3text" onClick={ open3 }>Multimedia (24.1%)</h3>
-            <h3 id="chart4text" onClick={ open4 }>Long-form text (53%)</h3>
-
+            <h3 id="chart4text" onClick={ open4 }>Long-form text (53.0%)</h3>
+<div className="directions">
+            <span>Please click on the labels above to switch between charts</span>
+          </div>
           </div>
         </div>
+          
       </BumperSection>
       <HorizontalSection>
         <HorizontalScroll>
           <CardsContainer>
             <div className="body page" id="body-end">
-              <p>
+              <p id="page2p3">
                 A decade into thought leadership’s
                 evolution from niche to mass market,
                 companies still love the written
                 word—and produce lots of them. Yet
                 the head of content at one major
                 thought leadership publisher flatly
-                told us: “People just don't read long
+                told us, “People just don’t read long
                 articles.” Why does so much thought
                 leadership still assume they do?
               </p>
@@ -260,23 +270,12 @@ const App = () => (
       </HorizontalSection>
       <BumperSection>
         <div className="body">
-          <p>
-            Consumers have embraced an
-            attention economy, moving away
-            from slow, deep consumption toward
-            quick dopamine hits. That’s how
-            newspapers lost ground to newsfeeds
-            to X (Twitter). Albums to singles to
-            TikToks. Films to videos to reels. Yet
-            more than half of all thought
-            leadership is text-based and runs
-            more than 1,000 words; a quarter of
-            those are reports running to several
-            thousands of words. So, what gives?
+          <p id="page3p1">
+          Consumers have embraced an attention economy, moving away from slow, deep consumption toward quick dopamine hits. That’s how newspapers lost ground to newsfeeds, which lost ground to X (Twitter). And albums to singles to TikToks. And films to videos to reels. Yet more than half of all thought leadership is text-based and runs more than 1,000 words; a quarter of those are reports running to several thousands of words. So what gives?
           </p>
-          <p>
+          <p id="page3p2">
             McKinsey & Company’s global
-            editorial director, Lucia Rahilly, told us.
+            editorial director, Lucia Rahilly, told us,
             “Many companies and thought leaders
             think they need to follow those genre
             conventions, which—for better or
@@ -284,18 +283,12 @@ const App = () => (
             thought leadership is created and
             how it is assessed.”
           </p>
-          <p>
-            Those conventions are easily
-            identifiable: thought leadership
-            should be long, analytical, aimed
-            squarely at senior leaders, and reflect
-            the seriousness of the subject matter
-            and its authors. To be fair, that’s often
+          <p id="page3p3">
+          Those conventions are easily identifiable: thought leadership should be long, analytical, and aimed squarely at senior leaders, and it should reflect the seriousness of the subject matter and its authors.
+           To be fair, that’s often
             justified and even demanded: 46% of
-            respondents to
-            a content marketing
-            survey in 2022
-            said research reports
+            respondents to <a href="https://leffcommunications.com/2024/03/05/rethinking-the-thought-leadership-genre/" target="_blank">a content marketing
+            survey in 2022</a> said research reports
             produced the best business results,
             closely followed by 43% citing
             e-books and books.
@@ -306,7 +299,7 @@ const App = () => (
         <HorizontalScroll>
           <CardsContainer>
             <div className="body page" id="body-end">
-              <p>
+              <p id="page3p4">
                 The challenge for organizations isn’t
                 that these conventions should be
                 rejected—the default format for
@@ -323,19 +316,18 @@ const App = () => (
                 protective about how it looked, its
                 tone, and where it appeared. Yet the
                 reality is thought leadership is today
-                about much more than a content-
-                based demonstration of an author’s
+                about much more than a content-based demonstration of an author’s
                 knowledge or a company’s expertise.
               </p>
             </div>
             <div className="header page" id="header-3">
               <div className="title">
               <h2>“You can have really good editorially driven, audience-focused thought leadership. It’s still marketing. What are the three reasons to create content?</h2>
-              <h2>
+              <h2 className="drive-quote">
               To drive revenue.
-              </h2><h2>
+              </h2><h2 className="drive-quote">
 To drive relationships.
-</h2><h2>
+</h2><h2 className="drive-quote">
 To drive your reputation.
 </h2><h2>
 All of those are marketing.”
@@ -351,8 +343,8 @@ All of those are marketing.”
       <HorizontalSection>
         <HorizontalScroll>          
           <CardsContainer>
-            <div className="page">
-            
+            <div className="page accordion-wrapper">
+              <Accordion></Accordion>
             </div>
             
             <div className="header page" id="header-4">
@@ -364,7 +356,7 @@ All of those are marketing.”
       </HorizontalSection>
       <BumperSection>
         <div className="body">
-          <p>
+          <p id="page4p1">
             From something of a cottage
             industry a decade ago, the world of
             thought leadership has exploded.
@@ -380,40 +372,34 @@ All of those are marketing.”
             more than 1,000 pieces of content
             last year.
           </p>
-          <p>
-            This thought leadership arms race
-            risks being accelerated exponentially
-            by the advent of AI and its ability to
-            make the crafting of serviceable
-            content so much easier. Yet we
-            believe AI could have a different,
-            more positive impact by elevating the
-            impact and value of truly distinctive
-            content—the kind of content AI
-            currently can’t create on its own. Our
-            content innovation research identified
-            four clear steps for how organizations
-            can continue evolving their thought
-            leadership efforts.
+          <p id="page4p2">
+          This thought leadership arms race risks being accelerated exponentially by the advent of generative AI (gen AI) and its ability to make the crafting of serviceable content so much easier. Yet we believe gen AI could have a different, more positive effect by elevating the impact and value of truly distinctive content—the kind of content gen AI currently can’t create on its own. Our content innovation research identified four clear steps for how organizations can continue evolving their thought leadership efforts.
           </p>
         </div>
       </BumperSection>
       <HorizontalSection>
         <HorizontalScroll>          
           <CardsContainer>
-            <div className="page">
-              <Accordion></Accordion>
+            <div className="page accordion-wrapper">
+              <Accordion2></Accordion2>
             </div>
             <div className="header page" id="conclusion">
               <img loading="eager" src={ conclusion } alt=""/>
               <div className="title">
-                <h2>The world’s getting faster and attention spans shorter. While longer thought leadership has its place, more needs to be done to provide users with sharper, innovative content. “I think the intro and two, three paragraphs—that’s all you’re going to get a lot of the time,” one content leader said. “And if that’s all someone reads, you need give them enough to walk away with the impression, ‘They’re on it, and I learned something.’”</h2>
+                <h2>The world’s getting faster and attention spans shorter. While longer thought leadership has its place, more needs to be done to provide users with sharper, innovative content. “I think the intro and two, three paragraphs—that’s all you’re going to get a lot of the time,” one content leader said. “And if that’s all someone reads, you need give them enough to walk away with the impression ‘they’re on it, and I learned something.’”</h2>
               </div>
               
             </div>
+            
           </CardsContainer>
         </HorizontalScroll>
       </HorizontalSection>
+      <BumperSection>
+        <div className="cta">
+          <img className="logo" src={ logo } alt="" />
+              <a href="https://leffcommunications.com/contact/" target="_blank"><h2>Contact Us</h2></a>
+        </div>
+      </BumperSection>
     </Main>
   </>
 );
@@ -513,3 +499,11 @@ function open4() {
   charttext4.classList.add("active");
   
 };
+let timeout = setTimeout(() => {
+  if(window.scrollY > 0) {
+    return;
+  } else {
+    document.querySelector('#gradient-1').scrollIntoView({ behavior: "smooth" });
+  }
+  
+}, 5000);

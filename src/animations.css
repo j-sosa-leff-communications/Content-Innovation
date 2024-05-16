@@ -41,6 +41,105 @@
     animation-fill-mode: forwards;
   }
 
+  #page1p1 {
+    
+    animation: fade-out .28s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  #page1p2 {
+    
+    animation: fade-out .3s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page2p1 {
+    
+    animation: fade-out .424s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page2p2 {
+    
+    animation: fade-out .452s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  #page3p1 {
+    
+    animation: fade-out .616s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page3p2 {
+    
+    animation: fade-out .635s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page3p3 {
+    
+    animation: fade-out .653s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page4p1 {
+    
+    animation: fade-out .895s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+  #page4p2 {
+    
+    animation: fade-out .935s linear 1;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+  }
+
+  @media screen and (max-width: 650px) {
+    #gradient-1,
+    #gradient-2,
+    #gradient-3,
+    #gradient-4,
+      #page1p1,
+      #page1p2,
+      #page2p1,
+      #page2p2,
+      #page3p1,
+      #page3p2,
+      #page3p3,
+      #page4p1,
+      #page4p2 {
+        animation: none;
+      }
+    .header {
+        flex-direction: column;
+    }
+    #header-1>img, #header-2>img, #header-4>img {
+        width:100%;
+    }
+  }
+
 @keyframes pulse {
     from {
         transform: scale(1);
@@ -58,7 +157,7 @@
     25% {
         opacity: 1;
     }
-    75% {
+    95% {
         opacity: 1;
     }
     100% {

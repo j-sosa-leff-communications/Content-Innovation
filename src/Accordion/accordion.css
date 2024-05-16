@@ -1,51 +1,100 @@
+.accordion-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+.container{
+  display: flex;
+  justify-content: center;
+  width: 80vw;
+  height: 80vh;
+  padding: 0;
+}
+.choice, .choice2{
+  box-sizing: border-box;
+  padding: 0;
+  overflow: hidden;
+  float: left;
+  align-items: center;
+  transition: width 0.2s;
+  border-radius:3px;
+}
+.expand{
+  width: 70%;
+  border: 1px solid black;
+}
+.unset{
+  width: 16%;
+  color: #fff !important;
+  background-color: #000 !important;
+}
+.small{
+  width: 5em;
+  background-color: #000 !important;
+  border: #fff 1px solid;
+}
+
+.small>.card-title {
+  color: #fff;
+}
+.small>.card-body{
+  opacity: 0;
+}
+.unset > div > p{
+  opacity: 0;
+}
+.expand > div {
+  transition-delay: 200ms;
+  opacity: 1;
+}
+
+.card-body {
+  padding: 20px;
+}
+.card-title{
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+}
+
+.expand > .card-title {
+  writing-mode: horizontal-tb;
+  text-orientation: upright;
+}
+
+.card-title>h2 {
+  font-size: 2em;
+  padding: 20px;
+  margin-block-end: 0em;
+  margin-block-start: 0;
+}
+.card-text {
+  font-size: 1em;
+  line-height: 1.15;
+  margin-block-end: 0em;
+}
+
+@media screen and (max-height: 700px) {
+  .card-title>h2 {
+      font-size: 2em;
   }
-  
-  .accordion:hover {
-    background-color: #ccc;
+}
+
+@media screen and (max-height: 600px) {
+  .card-title>h2 {
+      font-size: 1.5em;
+      padding: 10px 20px;
   }
-  
-  .accordion:after {
-    content: '\002B';
-    color: #777;
-    font-weight: bold;
-    float: right;
-    margin-left: 5px;
+  .card-body {
+    padding: 0 20px;
+    line-height: 1;
   }
-  
-  .active:after {
-    content: "\2212";
+
+  .container{
+    display: flex;
+    justify-content: center;
+    width: 90vw;
+    height: 90vh;
+    padding: 0;
   }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    max-width: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-  }
-  
-  .container {
-  transform: rotate(90deg);
-  max-width:100vh;
-  max-height:100vw;
-  min-height:100vw;
-  min-width: 100vh;
-  }
-  
-  .panel>p {
-  
-    transform: rotate(-90deg);
-  }
+}
